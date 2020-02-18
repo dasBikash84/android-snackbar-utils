@@ -1,6 +1,6 @@
 # android-snackbar-utils
 
-<h4>Android library for [`Snackbar`](https://developer.android.com/reference/com/google/android/material/snackbar/Snackbar).</h4>
+Utility wrapper library on Android [`Snackbar`](https://developer.android.com/reference/com/google/android/material/snackbar/Snackbar).
 
 
 [![](https://jitpack.io/v/dasBikash84/android-snackbar-utils.svg)](https://jitpack.io/#dasBikash84/android-snackbar-utils)
@@ -25,11 +25,11 @@ dependencies {
 ```
 
 ## Features
-- Snackbar can be launched using AppCompatActivity/Activity/Fragment/Any view.
-- Extension function provided for calling from inside of AppCompatActivity/Activity/Fragment.
-- When launched from/using AppCompatActivity/Activity/Fragment Scackbar will be shown only if subject component is in Resumed state.
-- Action text and corresponding action task can be added to Snackbar.
-- Action task will run on main thread.
+- Snackbar can be [`launched`](https://github.com/dasBikash84/android-snackbar-utils/tree/master/app/src/main/java/com/dasbikash/android_snackbar_utils) using `AppCompatActivity/Activity/Fragment/Any view`.
+- Extension function provided for calling from `inside` of AppCompatActivity/Activity/Fragment.
+- When launched from/using AppCompatActivity/Activity/Fragment Scackbar will be shown only if subject component is in `Resumed` state.
+- Action text and corresponding `action task` can be added to Snackbar.
+- Action task will run on `main thread`.
 - Action text color and case can be customized.
 
 License
