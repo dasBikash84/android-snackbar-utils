@@ -54,7 +54,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showShortSnack(
             view: View, message: String,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = showSnack(
@@ -75,7 +75,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showShortSnack(
             view: View, @StringRes messageId: Int,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) {
@@ -100,7 +100,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showLongSnack(
             view: View, message: String,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = showSnack(
@@ -121,7 +121,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showLongSnack(
             view: View, @StringRes messageId: Int,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) {
@@ -146,7 +146,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showShortSnack(
             activity: Activity, message: String,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = activity.showShortSnack(
@@ -170,7 +170,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showShortSnack(
             activity: Activity, @StringRes messageId: Int,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = activity.showShortSnack(
@@ -194,7 +194,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showLongSnack(
             activity: Activity, message: String,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = activity.showLongSnack(
@@ -218,7 +218,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showLongSnack(
             activity: Activity, @StringRes messageId: Int,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = activity.showLongSnack(
@@ -242,7 +242,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showShortSnack(
             activity: AppCompatActivity, message: String,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = activity.showShortSnack(
@@ -266,7 +266,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showShortSnack(
             activity: AppCompatActivity, @StringRes messageId: Int,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = activity.showShortSnack(
@@ -290,7 +290,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showLongSnack(
             activity: AppCompatActivity, message: String,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = activity.showLongSnack(
@@ -314,7 +314,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showLongSnack(
             activity: AppCompatActivity, @StringRes messageId: Int,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = activity.showLongSnack(
@@ -338,7 +338,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showShortSnack(
             fragment: Fragment, message: String,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = fragment.showShortSnack(
@@ -362,7 +362,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showShortSnack(
             fragment: Fragment, @StringRes messageId: Int,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = fragment.showShortSnack(
@@ -386,7 +386,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showLongSnack(
             fragment: Fragment, message: String,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = fragment.showLongSnack(
@@ -410,7 +410,7 @@ class SnackBarUtils {
         @JvmStatic
         fun showLongSnack(
             fragment: Fragment, @StringRes messageId: Int,
-            actionText: CharSequence? = null, action: () -> Any? = { },
+            actionText: CharSequence? = null, action: (() -> Any?)? = { },
             @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
             actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
         ) = fragment.showLongSnack(
@@ -423,7 +423,7 @@ class SnackBarUtils {
 
         private fun showSnack(
             view: View, message: String,
-            duration: Int, actionText: CharSequence?, action: () -> Any?,
+            duration: Int, actionText: CharSequence?, action: (() -> Any?)?,
             @ColorInt actionTextColor: Int, actionTextUpperCase: Boolean
         ) {
             try {
@@ -449,12 +449,12 @@ class SnackBarUtils {
         private fun setSnackbarAction(
             snackbar: Snackbar,
             actionText: CharSequence,
-            action: () -> Any?,
+            action: (() -> Any?)?,
             @ColorInt actionTextColor: Int,
             actionTextUpperCase: Boolean
         ) {
             snackbar
-                .setAction(actionText) { runOnMainThread({ action() }) }
+                .setAction(actionText) { runOnMainThread({ action?.invoke() }) }
                 .setActionTextColor(actionTextColor)
                 .getView()
                 .findViewById<TextView>(R.id.snackbar_action)
@@ -509,7 +509,7 @@ internal fun Fragment.runWithView(task:(View)->Any?){
 fun View.showShortSnack(
     message: String,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) = SnackBarUtils.showShortSnack(this, message, actionText, action,actionTextColor,actionTextUpperCase)
@@ -527,7 +527,7 @@ fun View.showShortSnack(
 fun View.showShortSnack(
     @StringRes messageId: Int,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) = SnackBarUtils.showShortSnack(this, messageId, actionText, action,actionTextColor,actionTextUpperCase)
@@ -545,7 +545,7 @@ fun View.showShortSnack(
 fun View.showLongSnack(
     message: String,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) = SnackBarUtils.showLongSnack(this, message, actionText, action,actionTextColor,actionTextUpperCase)
@@ -563,7 +563,7 @@ fun View.showLongSnack(
 fun View.showLongSnack(
     @StringRes messageId: Int,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) = SnackBarUtils.showLongSnack(this, messageId, actionText, action,actionTextColor,actionTextUpperCase)
@@ -581,7 +581,7 @@ fun View.showLongSnack(
 fun Activity.showShortSnack(
     @StringRes messageId: Int,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) = showShortSnack(getString(messageId),actionText, action, actionTextColor, actionTextUpperCase)
@@ -599,7 +599,7 @@ fun Activity.showShortSnack(
 fun Activity.showShortSnack(
     message:String,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) {
@@ -627,7 +627,7 @@ fun Activity.showShortSnack(
 fun Activity.showLongSnack(
     @StringRes messageId: Int,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) = showLongSnack(getString(messageId),actionText, action, actionTextColor, actionTextUpperCase)
@@ -645,7 +645,7 @@ fun Activity.showLongSnack(
 fun Activity.showLongSnack(
     message:String,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) {
@@ -672,7 +672,7 @@ fun Activity.showLongSnack(
 fun AppCompatActivity.showShortSnack(
     @StringRes messageId: Int,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) = showShortSnack(getString(messageId),actionText, action, actionTextColor, actionTextUpperCase)
@@ -690,7 +690,7 @@ fun AppCompatActivity.showShortSnack(
 fun AppCompatActivity.showShortSnack(
     message:String,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) {
@@ -717,7 +717,7 @@ fun AppCompatActivity.showShortSnack(
 fun AppCompatActivity.showLongSnack(
     @StringRes messageId: Int,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) = showLongSnack(getString(messageId),actionText, action, actionTextColor, actionTextUpperCase)
@@ -734,7 +734,7 @@ fun AppCompatActivity.showLongSnack(
 fun AppCompatActivity.showLongSnack(
     message:String,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) {
@@ -761,7 +761,7 @@ fun AppCompatActivity.showLongSnack(
 fun Fragment.showShortSnack(
     @StringRes messageId: Int,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) = showShortSnack(getString(messageId),actionText, action, actionTextColor, actionTextUpperCase)
@@ -778,7 +778,7 @@ fun Fragment.showShortSnack(
 fun Fragment.showShortSnack(
     message:String,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) {
@@ -805,7 +805,7 @@ fun Fragment.showShortSnack(
 fun Fragment.showLongSnack(
     @StringRes messageId: Int,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) = showLongSnack(getString(messageId),actionText, action, actionTextColor, actionTextUpperCase)
@@ -822,7 +822,7 @@ fun Fragment.showLongSnack(
 fun Fragment.showLongSnack(
     message:String,
     actionText: CharSequence? = null,
-    action: () -> Any? = { },
+    action: (() -> Any?)? = { },
     @ColorInt actionTextColor: Int = DEFAULT_ACTION_TEXT_COLOR,
     actionTextUpperCase: Boolean = DEFAULT_ACTION_TEXT_CASE_IS_UPPER
 ) {
