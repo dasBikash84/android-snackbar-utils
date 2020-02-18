@@ -25,7 +25,7 @@ dependencies {
 ```
 
 ## Features
-- Snackbar can be [`launched`](https://github.com/dasBikash84/android-snackbar-utils/tree/master/app/src/main/java/com/dasbikash/android_snackbar_utils) using `AppCompatActivity/Activity/Fragment/Any view`.
+- Snackbar can be [`launched`](https://github.com/dasBikash84/android-snackbar-utils/blob/master/app/src/main/java/com/dasbikash/android_snackbar_utils/SnackBarUtils.kt) using `AppCompatActivity/Activity/Fragment/Any view`.
 - Extension function provided for calling from `inside` of AppCompatActivity/Activity/Fragment.
 - When launched from/using AppCompatActivity/Activity/Fragment Scackbar will be shown only if subject component is in `Resumed` state.
 - Action text and corresponding `action task` can be added to Snackbar.
