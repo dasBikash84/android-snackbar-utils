@@ -31,6 +31,51 @@ dependencies {
 - Action text and corresponding `action task` can be added to Snackbar.
 - Action task will run on `main thread`.
 - Action text color and case can be customized.
+- If called with a view that has to active root view, then will show `Toast` with supplied message as fall-back.
+
+## Usage example
+
+##### Show `short` snack from inside of `AppCompatActivity` / `Activity` / `Fragment` class body without attaching `action`
+```
+    showShortSnack("Snack message")
+    showShortSnack(this,"Snack message")
+    showShortSnack(snackMessageId) // snackMessageId is a String resource Id
+    SnackBarUtils.showShortSnack(this,snackMessageId) // snackMessageId is a String resource Id 
+```
+
+##### Show `long` snack from inside of `AppCompatActivity` / `Activity` / `Fragment` class body without attaching `action`
+```
+    showLongSnack("Snack message")
+    showLongSnack(this,"Snack message")
+    showLongSnack(snackMessageId) // snackMessageId is a String resource Id
+    SnackBarUtils.showLongSnack(this,snackMessageId) // snackMessageId is a String resource Id
+```
+##### Show snack from inside of `AppCompatActivity` / `Activity` / `Fragment` class body with `action`
+```
+    showShortSnack(message = "Snack message",actionText = "Action",
+                    action = { println("Short snack with default action format")})
+        
+    SnackBarUtils.showLongSnack(message = "Snack message",actionText = "Action",
+                                action = { println("Long snack with white uppercase action text")},
+                                actionTextColor = Color.WHITE,
+                                actionTextUpperCase = true)
+```
+
+##### Show snack from any class with a `view` instance (without attaching `action`)
+```
+    SnackBarUtils.showShortSnack(view,"Snack message") // 'view' is an instance of 'View'
+    SnackBarUtils.showLongSnack(view,snackMessageId) // snackMessageId is a String resource Id
+```
+##### Show snack from any class with a `view` instance (with `action`)
+```
+    SnackBarUtils.showShortSnack(view = view,message = "Snack message",actionText = "Action",
+                    action = { println("Short snack with default action format")}) // 'view' is an instance of 'View'
+                    
+    SnackBarUtils.showLongSnack(view = view,messageId = snackMessageId,actionText = "Action",
+                    action = { println("Long snack with white uppercase action text")},
+                    actionTextColor = Color.BLUE,
+                    actionTextUpperCase = false) // snackMessageId is a String resource Id
+```
 
 License
 --------
