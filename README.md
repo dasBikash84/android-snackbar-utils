@@ -56,7 +56,7 @@ dependencies {
                     action = { println("Short snack with default action format")})
         
     SnackBarUtils.showLongSnack(message = "Snack message",actionText = "Action",
-                                action = { println("Long snack with white uppercase action text")},
+                                action = { println("Long snack with white upper case action text")},
                                 actionTextColor = Color.WHITE,
                                 actionTextUpperCase = true)
 ```
@@ -72,7 +72,7 @@ dependencies {
                     action = { println("Short snack with default action format")}) // 'view' is an instance of 'View'
                     
     SnackBarUtils.showLongSnack(view = view,messageId = snackMessageId,actionText = "Action",
-                    action = { println("Long snack with white uppercase action text")},
+                    action = { println("Long snack with blue lower case action text")},
                     actionTextColor = Color.BLUE,
                     actionTextUpperCase = false) // snackMessageId is a String resource Id
 ```
