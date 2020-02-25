@@ -38,16 +38,22 @@ dependencies {
 ##### Show `short` snack from inside of `AppCompatActivity` / `Activity` / `Fragment` class body without attaching `action`
 ```
     showShortSnack("Snack message")
+    		//or
     showShortSnack(this,"Snack message")
+    		//or
     showShortSnack(snackMessageId) // snackMessageId is a String resource Id
+    		//or
     SnackBarUtils.showShortSnack(this,snackMessageId) // snackMessageId is a String resource Id 
 ```
 
 ##### Show `long` snack from inside of `AppCompatActivity` / `Activity` / `Fragment` class body without attaching `action`
 ```
     showLongSnack("Snack message")
+    		//or
     showLongSnack(this,"Snack message")
+    		//or
     showLongSnack(snackMessageId) // snackMessageId is a String resource Id
+    		//or
     SnackBarUtils.showLongSnack(this,snackMessageId) // snackMessageId is a String resource Id
 ```
 ##### Show snack from inside of `AppCompatActivity` / `Activity` / `Fragment` class body with `action`
@@ -55,6 +61,8 @@ dependencies {
     showShortSnack(message = "Snack message",actionText = "Action",
                     action = { println("Short snack with default action format")})
         
+    		//or
+		
     SnackBarUtils.showLongSnack(message = "Snack message",actionText = "Action",
                                 action = { println("Long snack with white upper case action text")},
                                 actionTextColor = Color.WHITE,
@@ -64,6 +72,7 @@ dependencies {
 ##### Show snack from any class with a `view` instance (without attaching `action`)
 ```
     SnackBarUtils.showShortSnack(view,"Snack message") // 'view' is an instance of 'View'
+    		//or
     SnackBarUtils.showLongSnack(view,snackMessageId) // snackMessageId is a String resource Id
 ```
 ##### Show snack from any class with a `view` instance (with `action`)
@@ -71,6 +80,8 @@ dependencies {
     SnackBarUtils.showShortSnack(view = view,message = "Snack message",actionText = "Action",
                     action = { println("Short snack with default action format")}) // 'view' is an instance of 'View'
                     
+    		//or
+		
     SnackBarUtils.showLongSnack(view = view,messageId = snackMessageId,actionText = "Action",
                     action = { println("Long snack with blue lower case action text")},
                     actionTextColor = Color.BLUE,
