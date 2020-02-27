@@ -1,4 +1,4 @@
-package com.dasbikash.android_snackbar_utils
+package com.dasbikash.snackbar_ext
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

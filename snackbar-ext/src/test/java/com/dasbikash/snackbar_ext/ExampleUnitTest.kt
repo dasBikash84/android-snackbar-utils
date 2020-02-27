@@ -1,4 +1,4 @@
-package com.dasbikash.android_snackbar_utils
+package com.dasbikash.snackbar_ext
 
 import org.junit.Test
 

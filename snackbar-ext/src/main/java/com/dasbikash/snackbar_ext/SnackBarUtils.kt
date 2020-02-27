@@ -1,4 +1,4 @@
-package com.dasbikash.android_snackbar_utils
+package com.dasbikash.snackbar_ext
 
 import android.app.Activity
 import android.graphics.Color
@@ -13,8 +13,8 @@ import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
-import com.dasbikash.android_snackbar_utils.SnackBarUtils.Companion.DEFAULT_ACTION_TEXT_CASE_IS_UPPER
-import com.dasbikash.android_snackbar_utils.SnackBarUtils.Companion.DEFAULT_ACTION_TEXT_COLOR
+import com.dasbikash.snackbar_ext.SnackBarUtils.Companion.DEFAULT_ACTION_TEXT_CASE_IS_UPPER
+import com.dasbikash.snackbar_ext.SnackBarUtils.Companion.DEFAULT_ACTION_TEXT_COLOR
 import com.google.android.material.snackbar.Snackbar
 
 /**
