@@ -1,4 +1,4 @@
-# android-snackbar-utils
+# snackbar-ext
 
 Utility wrapper library on Android [`Snackbar`](https://developer.android.com/reference/com/google/android/material/snackbar/Snackbar).
 
