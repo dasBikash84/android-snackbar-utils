@@ -1,2 +1,2 @@
-include ':app'
+include ':snackbar-utils'
 rootProject.name='Android Snackbar Utils'
