@@ -3,7 +3,7 @@
 Utility wrapper library on Android [`Snackbar`](https://developer.android.com/reference/com/google/android/material/snackbar/Snackbar).
 
 
-[![](https://jitpack.io/v/dasBikash84/android-snackbar-utils.svg)](https://jitpack.io/#dasBikash84/android-snackbar-utils)
+[![](https://jitpack.io/v/dasBikash84/snackbar-ext.svg)](https://jitpack.io/#dasBikash84/snackbar-ext)
 
 ## Dependency
 
