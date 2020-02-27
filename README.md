@@ -1,9 +1,9 @@
-# android-snackbar-utils
+# snackbar-ext
 
 Utility wrapper library on Android [`Snackbar`](https://developer.android.com/reference/com/google/android/material/snackbar/Snackbar).
 
 
-[![](https://jitpack.io/v/dasBikash84/android-snackbar-utils.svg)](https://jitpack.io/#dasBikash84/android-snackbar-utils)
+[![](https://jitpack.io/v/dasBikash84/snackbar-ext.svg)](https://jitpack.io/#dasBikash84/snackbar-ext)
 
 ## Dependency
 
@@ -20,12 +20,12 @@ allprojects {
 Then, add the library to your module `build.gradle`
 ```gradle
 dependencies {
-    implementation 'com.github.dasBikash84:android-snackbar-utils:latest.release.here'
+    implementation 'com.github.dasBikash84:snackbar-ext:latest.release.here'
 }
 ```
 
 ## Features
-- Snackbar can be [`launched`](https://github.com/dasBikash84/android-snackbar-utils/blob/master/app/src/main/java/com/dasbikash/android_snackbar_utils/SnackBarUtils.kt) using `AppCompatActivity/Activity/Fragment/Any view`.
+- Snackbar can be [`launched`](https://github.com/dasBikash84/snackbar-ext/blob/master/snackbar-utils/src/main/java/com/dasbikash/android_snackbar_utils/SnackBarUtils.kt) using `AppCompatActivity/Activity/Fragment/Any view`.
 - Extension function provided for calling from `inside` of AppCompatActivity/Activity/Fragment.
 - When launched from/using AppCompatActivity/Activity/Fragment Scackbar will be shown only if subject component is in `Resumed` state.
 - Action text and corresponding `action task` can be added to Snackbar.
