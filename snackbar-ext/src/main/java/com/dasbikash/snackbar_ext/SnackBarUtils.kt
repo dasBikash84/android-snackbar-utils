@@ -636,7 +636,7 @@ fun Activity.showIndefiniteSnack(
 fun Activity.showIndefiniteSnack(
     message:String
 ) {
-    runWithView {it.showLongSnack(message)}
+    runWithView {it.showIndefiniteSnack(message)}
 }
 
 /**
@@ -788,5 +788,5 @@ fun Fragment.showIndefiniteSnack(
 fun Fragment.showIndefiniteSnack(
     message:String
 ) {
-    runWithView {it.showLongSnack(message)}
+    runWithView {it.showIndefiniteSnack(message)}
 }
